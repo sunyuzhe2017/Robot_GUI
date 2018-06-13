@@ -1,0 +1,10 @@
+<launch>
+  <master auto="start"/>
+  <node pkg="tts" type="tts_node" name="tts_node"/>
+  <node pkg="camera_image" type="camera_pub" name="camera_pub" args="0"/>
+  <node pkg="door_rc" type="main" name="main" />
+  <node pkg="main_interface" type="main_interface" name="main_interface" />
+  <!-- node pkg="usb_cam" type="usb_cam_node" name="usb_cam"/!-->
+   <include file = "$(find main_interface)/launch/face_recognition.launch" />
+
+</launch>

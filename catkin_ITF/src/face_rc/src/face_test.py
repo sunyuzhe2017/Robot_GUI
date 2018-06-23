@@ -8,7 +8,7 @@ from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge, CvBridgeError
 import numpy as np
 import face_recognition
-
+import pickle
 
 class FaceRecognition():
     def __init__(self):
@@ -30,36 +30,12 @@ class FaceRecognition():
         rospy.wait_for_message("/camera/process", Image)
         rospy.loginfo("Ready.")
 
-        #initial the face_recognition
+	#initial the face_recognition
 	# Load a sample picture and learn how to recognize it.
-        self.mqh_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/MQH.png")
-        self.mqh_face_encoding = face_recognition.face_encodings(self.mqh_image)[0]
-        self.rc_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/RC.jpg")
-        self.rc_face_encoding = face_recognition.face_encodings(self.rc_image)[0]
-        # Load a sample picture and learn how to recognize it.
-        self.sh_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/SH")
-        self.sh_face_encoding = face_recognition.face_encodings(self.sh_image)[0]
-        # Load a sample picture and learn how to recognize it.
-        self.syz_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/SYZ")
-        self.syz_face_encoding = face_recognition.face_encodings(self.syz_image)[0]
-        # Load a second sample picture and learn how to recognize it.
-        self.zc_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/ZC")
-        self.zc_face_encoding = face_recognition.face_encodings(self.zc_image)[0]
-        # Load a second sample picture and learn how to recognize it.
-        self.zwp_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/ZWP")
-        self.zwp_face_encoding = face_recognition.face_encodings(self.zwp_image)[0]
-        # Load a second sample picture and learn how to recognize it.
-        self.zwj_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/ZWJ")
-        self.zwj_face_encoding = face_recognition.face_encodings(self.zwj_image)[0]
-        # Load a sample picture and learn how to recognize it.
-        self.sjh_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/SJH")
-        self.sjh_face_encoding = face_recognition.face_encodings(self.sjh_image)[0]
-        # Load a sample picture and learn how to recognize it.
-        self.lhb_image = face_recognition.load_image_file("/home/sun/catkin_ITF/src/face_rc/src/images/LHB")
-        self.lhb_face_encoding = face_recognition.face_encodings(self.lhb_image)[0]
-        # Create arrays of known face encodings and their names
-        self.known_face_encodings = [self.mqh_face_encoding,self.rc_face_encoding,self.sjh_face_encoding,self.lhb_face_encoding,self.sh_face_encoding,self.zc_face_encoding,self.zwp_face_encoding,self.zwj_face_encoding,self.syz_face_encoding]
-        self.known_face_names = ["MQH","RC","SJH","LHB","SH","ZC","ZWP","ZWJ","SYZ"]
+	pkl_names = open('/home/sun/catkin_ITF/src/face_rc/src/face_names.pkl','rb')
+	pkl_encodings = open('/home/sun/catkin_ITF/src/face_rc/src/face_encodings.pkl','rb')
+        self.known_face_names = pickle.load(pkl_names)	
+	self.known_face_encodings = pickle.load(pkl_encodings)	
 
         # Initialize some variables
         self.face_locations = []
@@ -100,10 +76,10 @@ class FaceRecognition():
         rgb_small_frame = small_frame#[:, :, ::-1]
         if self.process_this_frame:
             self.face_locations = face_recognition.face_locations(rgb_small_frame)
+            #self.face_locations = face_recognition.face_locations(rgb_small_frame,model = 'cnn')
             self.face_encodings = face_recognition.face_encodings(rgb_small_frame, self.face_locations)
             self.face_names = []
             for face_encoding in self.face_encodings:
-                #matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding)
                 matches = face_recognition.compare_faces(self.known_face_encodings, face_encoding,tolerance=0.39)
                 name = "Unknown"
                 if True in matches:
@@ -125,6 +101,7 @@ class FaceRecognition():
             left *= 4
             cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
         return frame
+            
 
 
 def main(args):

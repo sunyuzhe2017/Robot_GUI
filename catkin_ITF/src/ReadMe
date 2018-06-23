@@ -18,3 +18,5 @@ tts: voice recogniton
 	sub_topic:speech/tts_topic
 
 usage:open a terminal cd catkin_ITF/src ./autoLoad.sh 
+2018.6.23
+added pretreatment.py file to process images in order to improve starting speed at the first time

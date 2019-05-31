@@ -1,0 +1,28 @@
+2018.6.13
+This project contains five sub-projects :camera_image,door_rc,face_rc,main_interface,tts.
+
+camera_image:publish camera image to door_rc pub_topic:camera/image
+
+door_rc: door number recognition and publish processed image and recognition result to face_rc 
+	sub_topic : camera/imgae  pub_topic:camera/process door_result
+
+face_rc: python file contains face_test.py listener.py
+	recognise faces and send result to face_rc/listener file ,then after process the results(door & face) send message to tts for voice 
+	sub_topic:camera/process door_result face_result 
+	pub_topic:/speech/tts_topic 
+
+main_interface: contains launch file ,GUI for service robot show the image published from face_test.py on the top-right corner with 320x240 size
+		sub_topic:GUI/face_result
+
+tts: voice recogniton 
+	sub_topic:speech/tts_topic
+
+usage:open a terminal cd catkin_ITF/src ./autoLoad.sh 
+2018.6.23
+added pretreatment.py file to process images in order to improve starting speed at the first time
+2018.8.18
+debug for text sending with 4G module,added serial communication with arduino control servo open and close container.
+2018.9.7
+added soft keyboard for every lineEdit where need to input something with numbers.
+2018.10.18
+change camera_image to  usb_cam package,no need to set video number anymore!And the original package useless.

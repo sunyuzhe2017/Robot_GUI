@@ -1,0 +1,15 @@
+<launch>
+  <master auto="start"/>
+  <!-- Starting usb_cam !-->
+  <include file = "$(find usb_cam)/launch/camera_image.launch" />
+  <!-- Starting Interface !-->
+  <node pkg="main_interface" type="main_interface" name="main_interface" />
+  <!-- Starting voice recognition !-->
+  <node pkg="tts" type="tts_node" name="tts_node"/>
+  <!-- Starting face recognition,and results judgetment file!-->
+  <include file = "$(find main_interface)/launch/face_recognition.launch" />
+  <!-- Starting door number recognition !-->
+  <node pkg="door_rc" type="main" name="main" />
+
+  <!--node pkg="camera_image" type="camera_pub" name="camera_pub" args="0"/!-->
+</launch>

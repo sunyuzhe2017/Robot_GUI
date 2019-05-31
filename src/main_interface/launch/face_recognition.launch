@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="face_rc" name="listener" type="listener.py" >
+  </node>
+  <node pkg="face_rc" name="face_test" type="face_rec.py" output="screen" >
+  </node>
+</launch>

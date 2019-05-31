@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowDesign</class>
+ <widget class="QMainWindow" name="MainWindowDesign">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>QRosApp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../resources/images.qrc">
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+background-image: url(:/images/background.jpg);
+}</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="Australia"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="ManualButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>110</y>
+      <width>200</width>
+      <height>124</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Fallback</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{
+background-color: rgb(83, 255, 64);
+	border-color: rgb(165, 39, 255);
+}
+
+QPushButton:pressed{
+border - style:inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string extracomment="手动控制机器人行走">手动操作</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SendfileButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>110</y>
+      <width>200</width>
+      <height>124</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Fallback</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{
+background-color: rgb(83, 255, 64);
+	border-color: rgb(165, 39, 255);
+}
+
+QPushButton:pressed{
+border - style:inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string extracomment="手动控制机器人行走">传送文件</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PointButton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>290</y>
+      <width>200</width>
+      <height>124</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Fallback</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{
+background-color: rgb(83, 255, 64);
+	border-color: rgb(165, 39, 255);
+}
+
+QPushButton:pressed{
+border - style:inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string extracomment="手动控制机器人行走">指路模式</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GetfileButton">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>290</y>
+      <width>200</width>
+      <height>124</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Droid Sans Fallback</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton:hover{
+background-color: rgb(83, 255, 64);
+	border-color: rgb(165, 39, 255);
+}
+
+QPushButton:pressed{
+border - style:inset;
+}
+</string>
+    </property>
+    <property name="text">
+     <string extracomment="手动控制机器人行走">获取文件</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_tju">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>291</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai TW MBE</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;天 津 大 学&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_pro">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>490</y>
+      <width>471</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai TW MBE</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-weight:600; color:#ff0000;&quot;&gt;第 一 代 服 务 机 器 人&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_place">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>540</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai TW MBE</family>
+      <pointsize>36</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;青岛&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber_time">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>20</y>
+      <width>311</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 0);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>8</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_date">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>540</y>
+      <width>301</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>AR PL UKai TW MBE</family>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 0, 0);
+font: 26pt &quot;AR PL UKai TW MBE&quot;;
+font-weight:600;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-weight:600; color:#ff0000;&quot;&gt;日期&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_camera">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>0</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_camera</zorder>
+   <zorder>ManualButton</zorder>
+   <zorder>SendfileButton</zorder>
+   <zorder>PointButton</zorder>
+   <zorder>GetfileButton</zorder>
+   <zorder>label_tju</zorder>
+   <zorder>label_pro</zorder>
+   <zorder>label_place</zorder>
+   <zorder>lcdNumber_time</zorder>
+   <zorder>label_date</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1366</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;Introduction</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+    <addaction name="separator"/>
+    <addaction name="action_Quit"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configuration</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionPanel"/>
+   </widget>
+   <widget class="QMenu" name="menuShutDown">
+    <property name="title">
+     <string>ShutDown</string>
+    </property>
+    <addaction name="action_shutdown"/>
+    <addaction name="action_restart"/>
+   </widget>
+   <widget class="QMenu" name="menuLaunch">
+    <property name="title">
+     <string>Launch</string>
+    </property>
+    <addaction name="actionlaunch_base"/>
+    <addaction name="actionlaunch_lidar"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menuConfiguration"/>
+   <addaction name="menuShutDown"/>
+   <addaction name="menuLaunch"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="font">
+    <font>
+     <family>URW Bookman L</family>
+     <pointsize>10</pointsize>
+     <italic>true</italic>
+    </font>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="dock_status">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>200</width>
+     <height>350</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>OpenHandCursor</cursorShape>
+   </property>
+   <property name="accessibleDescription">
+    <string/>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>Command Panel</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLineEdit" name="line_edit_master">
+       <property name="text">
+        <string>http://192.168.31.100:11311/</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="line_edit_host">
+       <property name="text">
+        <string>192.168.31.85</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkbox_use_environment">
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Use environment variables</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkbox_remember_settings">
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Remember settings on startup</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="button_connect">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip">
+        <string>Set the target to the current joint trajectory state.</string>
+       </property>
+       <property name="statusTip">
+        <string>Clear all waypoints and set the target to the current joint trajectory state.</string>
+       </property>
+       <property name="text">
+        <string>Connect</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QListView" name="view_logging"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_camera">
+       <property name="text">
+        <string>rviz相机</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quit_button">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>20</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>退出</string>
+       </property>
+       <property name="autoRepeatInterval">
+        <number>103</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="open">
+       <property name="text">
+        <string>打开摄像头</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="close">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>关闭摄像头</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>quit_button</zorder>
+    <zorder>view_logging</zorder>
+    <zorder>button_connect</zorder>
+    <zorder>line_edit_master</zorder>
+    <zorder>line_edit_host</zorder>
+    <zorder>checkbox_use_environment</zorder>
+    <zorder>checkbox_remember_settings</zorder>
+    <zorder>pushButton_camera</zorder>
+    <zorder>open</zorder>
+    <zorder>close</zorder>
+   </widget>
+  </widget>
+  <action name="action_Quit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::ApplicationShortcut</enum>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;About Robot</string>
+   </property>
+  </action>
+  <action name="actionPanel">
+   <property name="text">
+    <string>Panel</string>
+   </property>
+  </action>
+  <action name="action_shutdown">
+   <property name="text">
+    <string>shutdown</string>
+   </property>
+  </action>
+  <action name="action_restart">
+   <property name="text">
+    <string>restart</string>
+   </property>
+  </action>
+  <action name="actionlaunch_base">
+   <property name="text">
+    <string>launch_base</string>
+   </property>
+  </action>
+  <action name="actionlaunch_lidar">
+   <property name="text">
+    <string>launch_lidar</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>action_Quit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindowDesign</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quit_button</sender>
+   <signal>clicked()</signal>
+   <receiver>dock_status</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>859</x>
+     <y>552</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1265</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionPanel</sender>
+   <signal>triggered()</signal>
+   <receiver>dock_status</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>863</x>
+     <y>146</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

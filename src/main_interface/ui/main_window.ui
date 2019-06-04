@@ -19,7 +19,7 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow{
-background-image: url(:/images/background2.jpg);
+background-image: url(:/images/background.jpg);
 }</string>
   </property>
   <property name="locale">
@@ -164,9 +164,9 @@ border - style:inset;
    <widget class="QLabel" name="label_tju">
     <property name="geometry">
      <rect>
-      <x>40</x>
+      <x>110</x>
       <y>30</y>
-      <width>651</width>
+      <width>401</width>
       <height>91</height>
      </rect>
     </property>
@@ -177,7 +177,7 @@ border - style:inset;
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt; font-weight:600; color:#aa007f;&quot;&gt;天津职业技术师范大学&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:48pt; font-weight:600; color:#ff0000;&quot;&gt;天 津 大 学&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_pro">
@@ -196,7 +196,7 @@ border - style:inset;
      </font>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#aa007f;&quot;&gt;服 务 机 器 人&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#ff0000;&quot;&gt;服 务 机 器 人&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -205,8 +205,8 @@ border - style:inset;
    <widget class="QLCDNumber" name="lcdNumber_time">
     <property name="geometry">
      <rect>
-      <x>720</x>
-      <y>30</y>
+      <x>590</x>
+      <y>50</y>
       <width>321</width>
       <height>81</height>
      </rect>
@@ -243,12 +243,12 @@ border - style:inset;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(170, 0, 127);
+     <string notr="true">color: rgb(255, 0, 0);
 font: 26pt &quot;AR PL UKai TW MBE&quot;;
 font-weight:600;</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; color:#aa007f;&quot;&gt;日 期&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; color:#ff0000;&quot;&gt;日 期&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -315,6 +315,8 @@ font-weight:600;</string>
     </property>
     <addaction name="actionlaunch_base"/>
     <addaction name="actionlaunch_lidar"/>
+    <addaction name="actionlaunch_kartoslam"/>
+    <addaction name="actionlaunch_amcl"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menuConfiguration"/>
@@ -545,6 +547,16 @@ font-weight:600;</string>
   <action name="actionlaunch_lidar">
    <property name="text">
     <string>launch_lidar</string>
+   </property>
+  </action>
+  <action name="actionlaunch_kartoslam">
+   <property name="text">
+    <string>launch_kartoslam</string>
+   </property>
+  </action>
+  <action name="actionlaunch_amcl">
+   <property name="text">
+    <string>launch_amcl</string>
    </property>
   </action>
  </widget>

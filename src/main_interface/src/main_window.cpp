@@ -41,7 +41,8 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
     QObject::connect(ui.action_restart,SIGNAL(triggered()),this,SLOT(restart()));
     QObject::connect(ui.actionlaunch_base,SIGNAL(triggered()),this,SLOT(launch_base()));
     QObject::connect(ui.actionlaunch_lidar,SIGNAL(triggered()),this,SLOT(launch_lidar()));
-
+    QObject::connect(ui.actionlaunch_kartoslam,SIGNAL(triggered()),this,SLOT(launch_kartoslam()));
+    QObject::connect(ui.actionlaunch_amcl,SIGNAL(triggered()),this,SLOT(launch_amcl()));
     /******* Logging *******/
 
     ui.view_logging->setModel(qnode.loggingModel());
@@ -302,6 +303,14 @@ void MainWindow::launch_base()
     system("gnome-terminal -x bash -c 'source ~/catkin_ws/devel/setup.bash;rosrun base_controller base_controller'&");
 }
 void MainWindow::launch_lidar()
+{
+    system("gnome-terminal -x bash -c 'source ~/catkin_ws/devel/setup.bash;roslaunch my_robot_nav my_robot_rplidar_laser.launch'&");
+}
+void MainWindow::launch_kartoslam()
+{
+    system("gnome-terminal -x bash -c 'source ~/catkin_ws/devel/setup.bash;roslaunch my_robot_nav my_robot_rplidar_laser.launch'&");
+}
+void MainWindow::launch_amcl()
 {
     system("gnome-terminal -x bash -c 'source ~/catkin_ws/devel/setup.bash;roslaunch my_robot_nav my_robot_rplidar_laser.launch'&");
 }

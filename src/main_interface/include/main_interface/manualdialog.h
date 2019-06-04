@@ -4,6 +4,9 @@
 #include <QDialog>
 #include"ui_manualdialog.h"
 
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
+
 namespace main_interface {
   class QNode;
 }
@@ -31,9 +34,15 @@ private Q_SLOTS:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_servoopen_clicked();
+
+    void on_pushButton_servoclose_clicked();
+
 private:
     Ui::ManualDialog *ui;
     main_interface::QNode* qnode_;
+    QSerialPort serial_servo;
+
 };
 
 #endif // MANUALDIALOG_H

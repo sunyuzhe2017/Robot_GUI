@@ -57,6 +57,8 @@ private Q_SLOTS:
     void restart();//restart the computer
     void launch_base();//launch base_controller
     void launch_lidar();//launch rplidar
+    void launch_kartoslam();//launch kartoslam
+    void launch_amcl();//launch amcl
     void on_SendfileButton_clicked();
     void on_PointButton_clicked();
     void on_GetfileButton_clicked();

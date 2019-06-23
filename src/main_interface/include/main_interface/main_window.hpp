@@ -69,6 +69,8 @@ private Q_SLOTS:
     void closeCamara();//关闭摄像头*/
     //void on_pushButton_shutdown_clicked();
 
+    void on_IntroduceButton_clicked();
+
 private:
 	Ui::MainWindowDesign ui;
     QNode qnode;

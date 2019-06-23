@@ -3,6 +3,14 @@
         <file>icon.png</file>
         <file>background.jpg</file>
         <file>th.jpeg</file>
-        <file>background2.jpg</file>
+        <file>a0.png</file>
+        <file>a1.png</file>
+        <file>a2.png</file>
+        <file>a3.png</file>
+        <file>a4.png</file>
+        <file>a5.png</file>
+        <file>a6.png</file>
+        <file>a7.png</file>
+        <file>introduce.jpg</file>
     </qresource>
 </RCC>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IntroduceDialog</class>
+ <widget class="QDialog" name="IntroduceDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <layout class="QVBoxLayout" name="_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="acceptDrops">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/images/introduce.jpg);</string>
+       </property>
+       <property name="tabPosition">
+        <enum>QTabWidget::North</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>4</number>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>true</bool>
+       </property>
+       <property name="documentMode">
+        <bool>false</bool>
+       </property>
+       <property name="tabsClosable">
+        <bool>false</bool>
+       </property>
+       <property name="movable">
+        <bool>false</bool>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tab1">
+        <attribute name="title">
+         <string>简介</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;editArea&quot;&gt;&lt;/a&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;简&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;介&lt;/span&gt;&lt;/pre&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院源于 1933 年成立的北洋大学电机系,底蕴深厚,先后培养了如清华大学校长高景德院士、北京邮电大学校长叶培大院士、电力系统分析与仿真专家余贻鑫院士和荣智健校友等大批杰出人才。拥有从&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;本科、硕士、博士到博士后&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;完整的人才培养体系,致力于培养电气信息领域具有&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;家国情怀、全球视野、创新精神和实践能力&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;的卓越人才。&lt;/span&gt;&lt;img src=&quot;:/images/a1.png&quot; /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院拥有包括&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;电气工程、控制科学与工程和信息与通信工程&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;在内的三个一级学科博士学位授予权,并分设博士后流动站。一级学科下设十个二级学科,其中电力系统及其自动化、检测技术与自动化装置和通信与信息系统为国家重点建设学科。学院是天津大学本科招生规模最大的学院现有电器信息类的五个本科专业,就业好,择业宽。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab2">
+        <attribute name="title">
+         <string>师资力量</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;师&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;资力量&lt;/span&gt;&lt;/pre&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院师资力量雄厚,现有教职员工 277 余人,其中教授 68 人,副教授 92 人,讲师 46人。博士生导师 99 人,硕士生导师 153 人。&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院拥有教育部创新团队、科技部重点领域创新团队、中国工程院院士、俄罗斯工程院院士、国家“千人计划”引进人才、长江学者特聘教授 “973”项目首席科学家、国家杰出青年基金获得者等在内的一支高水平教师队伍。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab3">
+        <attribute name="title">
+         <string>科研与基地</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;科&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;研与基地&lt;/span&gt;&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院科研实力雄厚,拥有智能电网教育部重点实验室、天津市电力系统仿真控制重点实验室、天津市过程检测与控制重点实验室、分布式智能与微电网国际科技合作基地(科技部)、工业 4.0 示范技术国际联合研究中心(天津市科委)、天津市智能互联网国际联合研究中心、教育部新型飞行器联合研究中心(先进制导与控制分中心)、教育部电视与图像信息研究所等重要的科研基地。&lt;/span&gt;&lt;img src=&quot;:/images/a2.png&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;近五年承担科研项目 800 余项,年经费上亿元,获国家科技进步二等奖 1 项,其他各类省部级科学技术奖励 30 余项;发表 SCI 论文1200 多篇,授权发明专利 500 多项。一大批科研成果获得了广泛的推广应用,已形成多个在国内外具有影响力的特色研究方向。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab4">
+        <attribute name="title">
+         <string>招生与就业</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;招&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;生与就业&lt;/span&gt;&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院人才培养&lt;/span&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;面向未来、面向产业、面向国际&lt;/span&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;的人才需求,招生报名热度始终居于全校前列。毕业生就业率 98%以上,其中 50%左右学生选择继续深造,攻读国内外一流大学;毕业生的就业方向涵盖国家电网、中国能源、中石化、中国建筑集团以及国家三大通信运营商、四大银行以及多家通讯行业制造商等。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;地址: 天津市南开区卫津路 92 号天津大学第26 教学楼 D-E 区(300072)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;电话: 27403740 87402038&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;网址: http://www.tju.edu.cn/seea&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab5">
+        <attribute name="title">
+         <string>实践教学平台</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;pre style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;实&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;践教学平台&lt;/span&gt;&lt;/pre&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院建有 2 个国家级实验教学中心(电气电子国家级实验教学示范中心、电气工程与自动化国家级虚拟仿真实验教学中心), 1 个天津市实验教学中心(天津市信息与通信工程实验教学示范中心),20 余个专业实验室,与国内外知名企业共建的科研和实践平台近 10 个。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;校&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;企共建实践课堂&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院陆续和华为、三菱、Microchip、霍尼韦尔等公司合作,在学生实践能力培养中开启“校企联合育人”模式,建立了联合实验室和精英训练营。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;国&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;际化培养&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学院与国际一流院校保持长期稳定的合作办学关系,提供多种形式的国际化培养机会,如哈佛大学等毕业设计项目、香港大学等交换生项目、加州大学伯克利分校等暑期交流项目、英国肯特大学、格拉斯哥大学等“3+1”及“2+2”联合培养。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a name=&quot;editArea&quot;/&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;学&lt;/span&gt;&lt;span style=&quot; font-family:'monospace'; font-size:16pt; font-weight:600; text-decoration: underline; color:#ff0000;&quot;&gt;科竞赛&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;学科竞赛是学生创新能力培养的重要途径,学院学生在国际国内数学建模、电子设计大赛、电脑鼠大赛等各类赛事中屡获佳绩。&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QSlider" name="horizontalSlider">
+         <property name="minimum">
+          <number>30</number>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="singleStep">
+          <number>10</number>
+         </property>
+         <property name="pageStep">
+          <number>11</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonRead">
+         <property name="text">
+          <string>阅读</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonBack">
+         <property name="text">
+          <string>返回</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

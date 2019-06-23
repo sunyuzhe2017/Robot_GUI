@@ -19,8 +19,8 @@ find_package(catkin REQUIRED COMPONENTS  roscpp rviz
     sensor_msgs
     cv_bridge
     image_transport  )#deleted
-find_package(Qt5 REQUIRED Core Widgets SerialPort )#added
-set(QT_LIBRARIES Qt5::Widgets Qt5::SerialPort)#added
+find_package(Qt5 REQUIRED Core Widgets SerialPort Multimedia)#added
+set(QT_LIBRARIES Qt5::Widgets Qt5::SerialPort Qt5::Multimedia)#added
 include_directories(
     include
     ${catkin_INCLUDE_DIRS}
@@ -60,7 +60,8 @@ file(GLOB_RECURSE QT_SOURCES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} FOLLOW_SYMLINK
 ##############################################################################
 # Binaries
 ##############################################################################
-#set(QT_SOURCES src/main.cpp src/qnode.cpp src/main_window.cpp src/manualdialog.cpp src/sendfiledialog.cpp src/getfiledialog.cpp src/myviz.cpp src/pointroaddialog.cpp)
+#set(QT_SOURCES src/main.cpp src/qnode.cpp src/main_window.cpp src/manualdialog.cpp src/sendfiledialog.cpp src/getfiledialog.cpp
+#    src/myviz.cpp src/pointroaddialog.cpp src/introducedialog.cpp)
 
 add_executable(main_interface ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP})
 target_link_libraries(main_interface ${QT_LIBRARIES} ${catkin_LIBRARIES} ${OpenCV_LIBRARIES})

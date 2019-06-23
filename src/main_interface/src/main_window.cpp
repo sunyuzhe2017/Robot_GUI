@@ -11,6 +11,7 @@
 #include "../include/main_interface/pointroaddialog.h"
 #include "../include/main_interface/myviz.h"
 #include <QDebug>
+#include "../include/main_interface/introducedialog.h"
 
 //#include <opencv2/highgui/highgui.hpp>
 //#include <opencv2/highgui.hpp>//opencv3 changed place
@@ -315,3 +316,17 @@ void MainWindow::launch_amcl()
     system("gnome-terminal -x bash -c 'source ~/catkin_ws/devel/setup.bash;roslaunch my_robot_nav my_robot_rplidar_laser.launch'&");
 }
 }  // namespace main_interface
+
+void main_interface::MainWindow::on_IntroduceButton_clicked()
+{
+  QStatusBar* pStatusBar = ui.statusbar;
+  pStatusBar->showMessage("Introduction Window is showing...");
+  ui.statusbar->show();
+  //QMessageBox::information (this,tr("Info"),tr("Please put your file first!!!"),QMessageBox::Ok);
+  IntroduceDialog* dlg_i = new IntroduceDialog();
+  dlg_i->setWindowTitle("自动化学院介绍");
+  dlg_i->exec();
+  if(!dlg_i->isActiveWindow())
+  {ui.statusbar->clearMessage();
+  ui.statusbar->close();}
+}
